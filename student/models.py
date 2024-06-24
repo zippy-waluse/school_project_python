@@ -16,15 +16,15 @@ class Student(models.Model):
     def __str__(self):
         return f"{self.first_name} {self.last_name}"
     
-class Course(models.Model):
-    course_name = models.CharField(max_length=100)
-    course_code = models.CharField(max_length=20, unique=True)
-    Subject = models.TextField()
-    department = models.CharField(max_length=50)
-    updated_at = models.DateTimeField(auto_now=True)
+# class Course(models.Model):
+#     course_name = models.CharField(max_length=100)
+#     course_code = models.CharField(max_length=20, unique=True)
+#     Subject = models.TextField()
+#     department = models.CharField(max_length=50)
+#     updated_at = models.DateTimeField(auto_now=True)
     
-    def __str__(self):
-        return f"{self.course_name} ({self.course_code})"
+#     def __str__(self):
+#         return f"{self.course_name} ({self.course_code})"
 
 class Teacher(models.Model):
     first_name = models.CharField(max_length=50)
